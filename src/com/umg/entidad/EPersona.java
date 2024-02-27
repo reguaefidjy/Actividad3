@@ -7,7 +7,7 @@ package com.umg.entidad;
 
 /**
  *
- * @author DGUTIERREZ
+ * @author keidy
  */
 public class EPersona {
 
@@ -16,19 +16,17 @@ public class EPersona {
     private String direccion = "";
     private String telefono = "";
     private String fechaNacimiento = "";
-    private ECliente cliente = new ECliente();
     private EEmpleado empleado = new EEmpleado();
 
     public EPersona() {
     }
 
-    public EPersona(String nombres, String apellidos, String direccion, String telefono, String fechaNacimiento, ECliente cliente, EEmpleado empleado) {
+    public EPersona(String nombres, String apellidos, String direccion, String telefono, String fechaNacimiento, EEmpleado empleado) {
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.direccion = direccion;
         this.telefono = telefono;
         this.fechaNacimiento = fechaNacimiento;
-        this.cliente = cliente;
         this.empleado = empleado;
     }
 
@@ -70,14 +68,6 @@ public class EPersona {
 
     public void setFechaNacimiento(String fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
-    }
-
-    public ECliente getCliente() {
-        return cliente;
-    }
-
-    public void setCliente(ECliente cliente) {
-        this.cliente = cliente;
     }
 
     public EEmpleado getEmpleado() {
